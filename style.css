@@ -4,14 +4,25 @@ body {
 }
 
 nav {
-   padding: 20px 30px 0px 0px;
-   width: 98.4%;
-   height: 40px;
+   width: 100%;
+   height: 50px;
    background-color: rgb(172, 109, 27);
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
-   gap: 50px;
+   position: fixed;
+}
+
+ul.menu {
+   margin: 7px;
+   float: right;
+   list-style: none;
+}
+
+li {
+   float: left;
+   padding: 10px 20px;
+}
+
+li:hover {
+   background-color: black;
 }
 
 a {
@@ -23,27 +34,30 @@ a {
 main.all {
    padding-top: 40px;
    width: 100%;
-   height: 100vh;
+   height: 100%;
    display: flex;
    flex-direction: column;
 }
 
 header {
-   width: 40%;
+   width: 60%;
    height: 20%;
    text-align: center;
    align-self: center;
    padding-bottom: 20px;
+   margin-top: 20px;
+   margin-bottom: 10px;
 }
 
 h1 {
-   font-size: 2em;
+   font-size: 2.3em;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    text-transform: uppercase;
 }
 
 h2 {
-   
+   font-size: 1.8em;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h3 {
@@ -51,14 +65,26 @@ h3 {
    font-size: 1.5em;
 }
 
+.fontWeight {
+   font-weight: lighter;
+}
+
 p {
    font-size: 1em;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   width: 40%;
+}
+
+section.tresColunas {
+   width: 40%;
+   padding: 20px;
+   display: flex;
+   gap: 23px;
 }
 
 section.sec {
    padding: 0px 50px;
-   width: 40%;
+   width: 100%;
    text-align: justify;
    align-self: center;
    display: flex;
@@ -66,11 +92,16 @@ section.sec {
    align-items: center;
 }
 
-/* #intro, #sites {
-   background-color: rgb(202, 148, 77);
-} */
+section#intro, section#sites, section.site {
+   background-color: rgba(190, 124, 38, 0.534);
+}
 
 section.site {
+   padding: 20px;
+   border-radius: 10px;
+}
+
+section.site, section.site > p {
    width: 100%;
 }
 
@@ -84,7 +115,7 @@ a:hover {
 
 img {
    padding: 10px;
-   width: 80%;
+   width: 40%;
    justify-self: center;
 }
 p.foto {
@@ -97,6 +128,25 @@ footer {
    text-align: center;
    height: 40px;
    width: 100%;
-   background-color: rgb(179, 176, 176);
+   background-color: rgb(172, 109, 27);
    color: rgb(0, 0, 0);
+   float: left;
 }
+/*
+@media all and (max-width: 768px) {
+   #menu {
+      visibility: hidden;
+   }
+
+   p {
+      width: 80%;
+   }
+
+   .tresColunas {
+      display: block;
+      width: 60%;
+      padding: 0px;
+      margin: 10px auto;
+      float: none;
+   }
+}*/
