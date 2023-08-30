@@ -76,7 +76,7 @@ p {
 }
 
 section.tresColunas {
-   width: 40%;
+   width: 50%;
    padding: 20px;
    display: flex;
    gap: 23px;
@@ -99,14 +99,24 @@ section#intro, section#sites, section.site {
 section.site {
    padding: 20px;
    border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-section.site, section.site > p {
+section.site, section.site > p, footer {
    width: 100%;
 }
 
 section.site > a {
-   text-decoration: underline;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   background-color: rgb(172, 109, 27);
+   border-radius: 8px;
+   padding: 8px;
+   margin: 0px;
 }
 
 a:hover {
@@ -127,7 +137,6 @@ footer {
    padding-top: 10px;
    text-align: center;
    height: 40px;
-   width: 100%;
    background-color: rgb(172, 109, 27);
    color: rgb(0, 0, 0);
    float: left;
