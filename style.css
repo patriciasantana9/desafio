@@ -161,9 +161,14 @@ footer {
    float: left;
 }
 
-@media (min-width: 460px) /*and (max-width: 768px)*/ {
+@media (min-width: 460px) {
    p {
       width: 80%;
+   }
+
+   section.sec {
+      width: 80%;
+      align-items: center;
    }
 
    section.tresColunas {
@@ -173,5 +178,11 @@ footer {
 
    section.site {
       width: 50%;
+   }
+
+   p.foto {
+      font-size: .8em;
+      margin-top: -3px;
+      width: auto;
    }
 }
